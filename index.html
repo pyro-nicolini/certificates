@@ -1,190 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>certificados Piero Nicolini</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
-        body {
-            background-color: #06001b;
-            color: #ffffff;
-            font-family: 'Arial', sans-serif;
-        }
-        #contact {
-            background-color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
+      body {
+        background-color: #06001b;
+        color: #ffffff;
+        font-family: "Arial", sans-serif;
+      }
+      #contact {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+      }
 
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
 
-        nav {
-            top: 0;
-            position: fixed !important;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 10rem !important;
-        }
+      nav {
+        top: 0;
+        position: fixed !important;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 10rem !important;
+      }
 
-        a {
-            font-size: 1.4rem !important;
-        }
+      a {
+        font-size: 1.4rem !important;
+      }
 
-        .card {
-            margin-bottom: 30px;
-            border: none; /* Sin borde */
-        }
+      .card {
+        margin-bottom: 30px;
+        border: none; /* Sin borde */
+      }
 
-        .card-title {
-            font-size: 1.5rem;
-        }
+      .card-title {
+        font-size: 1.5rem;
+      }
 
-        .card-text {
-            font-size: 1rem;
-        }
-        
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 1;
-            transition: opacity 0.5s;
-        }
+      .card-text {
+        font-size: 1rem;
+      }
 
-        .modal.fade-out {
-            opacity: 0;
-        }
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: opacity 0.5s;
+      }
 
-        .btn-cerrar {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: transparent;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-        }
+      .modal.fade-out {
+        opacity: 0;
+      }
+
+      .btn-cerrar {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 4, 66, 0.815)">
-        <a class="navbar-brand text-white" href="#">Mis Certificados</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#certificates">Certificados</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+    <nav
+      class="navbar navbar-expand-lg"
+      style="background-color: rgba(0, 4, 66, 0.815)"
+    >
+      <a class="navbar-brand text-white" href="#">Mis Certificados</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#certificates">Certificados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    
-<!-- Sección de Contacto -->
-<section class="text-center" style="padding: 7rem 0;">
-    <h2 class="text-white">Contact</h2>
-    <div id="contact">
-        <a href="https://www.linkedin.com/in/pieronicolini/" target="_blank" class="text-white mx-4">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn" width="300" height="80">
+    <!-- Sección de Contacto -->
+    <section class="text-center" style="padding: 7rem 0">
+      <h2 class="text-white">Contact</h2>
+      <div id="contact">
+        <a
+          href="https://www.linkedin.com/in/pieronicolini/"
+          target="_blank"
+          class="text-white mx-4"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg"
+            alt="LinkedIn"
+            width="300"
+            height="80"
+          />
         </a>
-        <a href="https://github.com/pyro-nicolini/" target="_blank" class="text-white mx-2">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="100" height="100">
+        <a
+          href="https://github.com/pyro-nicolini/"
+          target="_blank"
+          class="text-white mx-2"
+        >
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="GitHub"
+            width="100"
+            height="100"
+          />
         </a>
-    </div>
-</section>
+      </div>
+    </section>
 
-    
-<!-- Sección de Habilidades -->
-<section id="skills" class="text-center" style="background-color: #06001b; padding: 60px 0;">
-    <h2 class="text-white">Skills / Habilidades</h2>
-    <div class="container">
+    <!-- Sección de Habilidades -->
+    <section
+      id="skills"
+      class="text-center"
+      style="background-color: #06001b; padding: 60px 0"
+    >
+      <h2 class="text-white">Skills / Habilidades</h2>
+      <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <i class="fab fa-html5 fa-5x" style="color: #E44D26;"></i>
-                <h4 class="text-white">HTML</h4>
-            </div>
-            <div class="col-md-4">
-                <i class="fab fa-css3-alt fa-5x" style="color: #1572B6;"></i>
-                <h4 class="text-white">CSS</h4>
-            </div>
-            <div class="col-md-4">
-                <i class="fab fa-js-square fa-5x" style="color: #F7DF1E;"></i>
-                <h4 class="text-white">JavaScript</h4>
-            </div>
+          <div class="col-md-4">
+            <i class="fab fa-html5 fa-5x" style="color: #e44d26"></i>
+            <h4 class="text-white">HTML</h4>
+          </div>
+          <div class="col-md-4">
+            <i class="fab fa-css3-alt fa-5x" style="color: #1572b6"></i>
+            <h4 class="text-white">CSS</h4>
+          </div>
+          <div class="col-md-4">
+            <i class="fab fa-js-square fa-5x" style="color: #f7df1e"></i>
+            <h4 class="text-white">JavaScript</h4>
+          </div>
         </div>
-    </div>
-</section>
-
-
+      </div>
+    </section>
 
     <!-- Sección de Certificados -->
-    <section id="certificates" class="text-center" style="padding: 60px 0;">
-        <h2 class="mb-4">Principal Cert's</h2>
-        <div class="container text-dark mb-4">
-            <div class="row galeria-imagenes">
-                <!-- Las tarjetas se generarán aquí mediante JavaScript -->
-            </div>
+    <section id="certificates" class="text-center" style="padding: 60px 0">
+      <h2 class="mb-4">Principal Cert's</h2>
+      <div class="container text-dark mb-4">
+        <div class="row galeria-imagenes">
+          <!-- Las tarjetas se generarán aquí mediante JavaScript -->
         </div>
-        <h2 class="mb-4">All's Certificates</h2>
-        <div class="container text-dark">
-            <div class="row galeria-imagenes2">
-                <!-- Las tarjetas se generarán aquí mediante JavaScript -->
-            </div>
+      </div>
+      <h2 class="mb-4">All's Certificates</h2>
+      <div class="container text-dark">
+        <div class="row galeria-imagenes2">
+          <!-- Las tarjetas se generarán aquí mediante JavaScript -->
         </div>
+      </div>
     </section>
 
     <footer>
-        <p class="text-center"><strong>Piero Nicolini | +56977116315 | naturalnen@gmail.com</strong></p>
+      <p class="text-center">
+        <strong>Piero Nicolini | +56977116315 | naturalnen@gmail.com</strong>
+      </p>
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            crearGaleria();
-            crearGaleria2();
-            scrollNav();
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        crearGaleria();
+        crearGaleria2();
+        scrollNav();
+      });
 
-        function crearGaleria() {
-            const CANTIDAD_IMAGENES = 2; // Cambia el número de certificados aquí
-            const galeria = document.querySelector(".galeria-imagenes");
+      function crearGaleria() {
+        const CANTIDAD_IMAGENES = 2; // Cambia el número de certificados aquí
+        const galeria = document.querySelector(".galeria-imagenes");
 
-            for (let i = 1; i <= CANTIDAD_IMAGENES; i++) {
-                const imagen = document.createElement("div");
-                imagen.classList.add("col-md-4");
+        for (let i = 1; i <= CANTIDAD_IMAGENES; i++) {
+          const imagen = document.createElement("div");
+          imagen.classList.add("col-md-4");
 
-                imagen.innerHTML = `
+          imagen.innerHTML = `
                     <div class="card">
                         <picture>
                             <source srcset="/${i}.webp" type="image/webp">
-                            <img loading="lazy" width="200" height="300" src="build/img/gallery/thumb/${i}.jpg" alt="Certificado ${i}" class="bg-success card-img-top p-3">
+                            <img loading="lazy" width="200" height="300" src="/${i}.jpg" alt="Certificado ${i}" class="bg-success card-img-top p-3">
                         </picture>
                         <div class="card-body">
                             <h5 class="card-title">Certificado de Academia</h5>
@@ -193,23 +233,23 @@
                     </div>
                 `;
 
-                // Event Handler
-                imagen.onclick = function () {
-                    mostrarImagen(i);
-                };
+          // Event Handler
+          imagen.onclick = function () {
+            mostrarImagen(i);
+          };
 
-                galeria.appendChild(imagen);
-            }
+          galeria.appendChild(imagen);
         }
-        function crearGaleria2() {
-            const CANTIDAD_IMAGENES = 10; // Cambia el número de certificados aquí
-            const galeria = document.querySelector(".galeria-imagenes2");
+      }
+      function crearGaleria2() {
+        const CANTIDAD_IMAGENES = 10; // Cambia el número de certificados aquí
+        const galeria = document.querySelector(".galeria-imagenes2");
 
-            for (let i = 1; i <= CANTIDAD_IMAGENES; i++) {
-                const imagen = document.createElement("div");
-                imagen.classList.add("col-md-2");
+        for (let i = 1; i <= CANTIDAD_IMAGENES; i++) {
+          const imagen = document.createElement("div");
+          imagen.classList.add("col-md-2");
 
-                imagen.innerHTML = `
+          imagen.innerHTML = `
                     <div class="card">
                         <picture>
                             <source srcset="desafioLatam/javascript/${i}.webp" type="image/webp">
@@ -222,97 +262,97 @@
                     </div>
                 `;
 
-                // Event Handler
-                imagen.onclick = function () {
-                    mostrarImagen2(i);
-                };
+          // Event Handler
+          imagen.onclick = function () {
+            mostrarImagen2(i);
+          };
 
-                galeria.appendChild(imagen);
-            }
+          galeria.appendChild(imagen);
         }
+      }
 
-        function mostrarImagen(i) {
-            const imagen = document.createElement("PICTURE");
-            imagen.innerHTML = `
+      function mostrarImagen(i) {
+        const imagen = document.createElement("PICTURE");
+        imagen.innerHTML = `
                 <source srcset="/${i}.webp" type="image/webp">
                 <img loading="lazy" width="1000" height="800" src="/${i}.webp" alt="Certificado ${i}">
             `;
 
-            // Generar modal
-            const modal = document.createElement("DIV");
-            modal.classList.add("modal");
-            modal.onclick = cerrarModal;
+        // Generar modal
+        const modal = document.createElement("DIV");
+        modal.classList.add("modal");
+        modal.onclick = cerrarModal;
 
-            // Botón cerrar modal
-            const cerrarModalBtn = document.createElement("BUTTON");
-            cerrarModalBtn.textContent = "X";
-            cerrarModalBtn.classList.add("btn-cerrar");
-            cerrarModalBtn.onclick = cerrarModal;
+        // Botón cerrar modal
+        const cerrarModalBtn = document.createElement("BUTTON");
+        cerrarModalBtn.textContent = "X";
+        cerrarModalBtn.classList.add("btn-cerrar");
+        cerrarModalBtn.onclick = cerrarModal;
 
-            modal.appendChild(imagen);
-            modal.appendChild(cerrarModalBtn);
+        modal.appendChild(imagen);
+        modal.appendChild(cerrarModalBtn);
 
-            // Agregar al html
-            const body = document.querySelector("body");
-            body.classList.add("overflow-hidden");
-            body.appendChild(modal);
-        }
+        // Agregar al html
+        const body = document.querySelector("body");
+        body.classList.add("overflow-hidden");
+        body.appendChild(modal);
+      }
 
-        function mostrarImagen2(e) {
-            const imagen = document.createElement("PICTURE");
-            imagen.innerHTML = `
+      function mostrarImagen2(e) {
+        const imagen = document.createElement("PICTURE");
+        imagen.innerHTML = `
                 <source srcset="desafioLatam/javascript/${e}.webp" type="image/webp">
                 <img loading="lazy" width="1000" height="800" src="desafioLatam/javascript/${e}.webp" alt="Certificado ${e}">
             `;
 
-            // Generar modal
-            const modal = document.createElement("DIV");
-            modal.classList.add("modal");
-            modal.onclick = cerrarModal;
+        // Generar modal
+        const modal = document.createElement("DIV");
+        modal.classList.add("modal");
+        modal.onclick = cerrarModal;
 
-            // Botón cerrar modal
-            const cerrarModalBtn = document.createElement("BUTTON");
-            cerrarModalBtn.textContent = "X";
-            cerrarModalBtn.classList.add("btn-cerrar");
-            cerrarModalBtn.onclick = cerrarModal;
+        // Botón cerrar modal
+        const cerrarModalBtn = document.createElement("BUTTON");
+        cerrarModalBtn.textContent = "X";
+        cerrarModalBtn.classList.add("btn-cerrar");
+        cerrarModalBtn.onclick = cerrarModal;
 
-            modal.appendChild(imagen);
-            modal.appendChild(cerrarModalBtn);
+        modal.appendChild(imagen);
+        modal.appendChild(cerrarModalBtn);
 
-            // Agregar al html
-            const body = document.querySelector("body");
-            body.classList.add("overflow-hidden");
-            body.appendChild(modal);
-        }
+        // Agregar al html
+        const body = document.querySelector("body");
+        body.classList.add("overflow-hidden");
+        body.appendChild(modal);
+      }
 
-        function cerrarModal() {
-            const modal = document.querySelector(".modal");
-            modal.classList.add("fade-out");
+      function cerrarModal() {
+        const modal = document.querySelector(".modal");
+        modal.classList.add("fade-out");
 
-            setTimeout(() => {
-                modal?.remove();
-                const body = document.querySelector("body");
-                body.classList.remove("overflow-hidden");
-            }, 100); // Espera a que termine la animación de 0.5s
-        }
+        setTimeout(() => {
+          modal?.remove();
+          const body = document.querySelector("body");
+          body.classList.remove("overflow-hidden");
+        }, 100); // Espera a que termine la animación de 0.5s
+      }
 
-        function scrollNav() {
-            const navLinks = document.querySelectorAll(".navbar-nav a");
-            navLinks.forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    const href = this.getAttribute("href");
-                    const section = document.querySelector(href);
-                    section.scrollIntoView({
-                        behavior: "smooth",
-                        block: "start"
-                    });
-                });
+      function scrollNav() {
+        const navLinks = document.querySelectorAll(".navbar-nav a");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+            const section = document.querySelector(href);
+            section.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
             });
-        }
+          });
+        });
+      }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
