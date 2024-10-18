@@ -278,8 +278,8 @@
       function mostrarImagen(i) {
         const imagen = document.createElement("PICTURE");
         imagen.innerHTML = `
-                <source srcset="/${i}.webp" type="image/webp">
-                <img loading="lazy" width="1000" height="800" src="/${i}.webp" alt="Certificado ${i}">
+                <source srcset="certs/${i}.webp" type="image/webp">
+                <img loading="lazy" width="1000" height="800" src="certs/${i}.webp" alt="Certificado ${i}">
             `;
 
         // Generar modal
