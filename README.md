@@ -10,7 +10,7 @@ Este repositorio contiene certificados y logros obtenidos en diferentes desafío
 
 ## Cómo Ver los Certificados
 
-Puedes ver los certificados y logros directamente en el sitio web [(https://pyro-nicolini.github.io/achievements/)](https://pyro-nicolini.github.io/certificates/).
+Puedes ver los certificados y logros directamente en el sitio web [(https://pyro-nicolini.github.io/certificates/)](https://pyro-nicolini.github.io/certificates/).
 
 ## Contacto
 
