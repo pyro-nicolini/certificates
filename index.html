@@ -19,18 +19,36 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <style>
-      body {
-        background-color: #06001b;
-        color: #ffffff;
-        font-family: "Arial", sans-serif;
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      html, body {
+      height: 100%;
+      margin: 0;
       }
-      #contact {
+
+      body {
+        background-color: #3a3f44;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+      }
+      .contacto {
         background-color: #ffffff;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 1rem;
+        flex-wrap: wrap;
       }
+      
+      #contact {
+        margin-top: 5rem;
+      }
+
+      #skills {
+        border-radius: 2rem;
+        max-width: 1100px;
+        margin: 3rem auto;
+      }
+
 
       h2 {
         font-size: 2.5rem;
@@ -44,11 +62,27 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 10rem !important;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      .contacto img {
+        max-height: 4rem;
+        width: auto;
+      }
+
+      @media (max-width: 600px) {
+        #contact {
+        margin-top: 15rem;
+        }
       }
 
       a {
-        font-size: 1.4rem !important;
+        font-size: 1rem !important;
+      }
+
+      button {
+        height: 3rem;
       }
 
       .card {
@@ -70,7 +104,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.6);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -92,30 +126,36 @@
         font-size: 24px;
         cursor: pointer;
       }
+
+      footer {
+        background-color: #1e2326;
+        margin: 0;
+        font-weight: 100;
+        padding: 1rem 0;
+        
+
+      }
     </style>
   </head>
   <body>
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg"
-      style="background-color: rgba(0, 4, 66, 0.815)"
+      style="background-color: #1e2326; z-index: 10;"
     >
       <a
         class="navbar-brand text-white"
-        href="https://pyro-nicolini.github.io/achievements/"
-        >Certificados Piero Nicolini</a
+        href="https://pyro-nicolini.github.io/curriculum/"
+        >Piero Nicolini</a
       >
       <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      class="navbar-toggler mx-2 border"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+    >
+      <i class="fa fa-bars fa-lg text-white px-1 py-2"></i>
+    </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -132,9 +172,9 @@
     </nav>
 
     <!-- Sección de Contacto -->
-    <section class="text-center" style="padding: 7rem 0">
+    <section id="contact" class="text-center">
       <h2 class="text-white">Contact</h2>
-      <div id="contact">
+      <div class="contacto">
         <a
           href="https://www.linkedin.com/in/pieronicolini/"
           target="_blank"
@@ -166,9 +206,9 @@
     <section
       id="skills"
       class="text-center"
-      style="background-color: #06001b; padding: 60px 0"
+      style="background-color: #1e2326; padding: 60px 0"
     >
-      <h2 class="text-white">Skills / Habilidades</h2>
+      <h2 class="text-white">Softwares & Technology</h2>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -186,16 +226,39 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Sección de Certificados -->
     <section id="certificates" class="text-center" style="padding: 60px 0">
-      <h2 class="mb-4">Principal Cert's</h2>
+      <h2 class="mb-4">Certificates</h2>
       <div class="container text-dark mb-4">
         <div class="row galeria-imagenes">
           <!-- Las tarjetas se generarán aquí mediante JavaScript -->
         </div>
+        <section
+          id="skills"
+          class="text-center"
+          style="background-color: #1e2326; padding: 60px 0"
+        >
+          <h2 class="text-white">Skills / Habilidades</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <i class="fab fa-html5 fa-5x" style="color: #e44d26"></i>
+                <h4 class="text-white">HTML</h4>
+              </div>
+              <div class="col-md-4">
+                <i class="fab fa-css3-alt fa-5x" style="color: #1572b6"></i>
+                <h4 class="text-white">CSS</h4>
+              </div>
+              <div class="col-md-4">
+                <i class="fab fa-js-square fa-5x" style="color: #f7df1e"></i>
+                <h4 class="text-white">JavaScript</h4>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <h2 class="mb-4">All's Certificates</h2>
+      <h2 class="mb-4">Cert's of Content</h2>
       <div class="container text-dark">
         <div class="row galeria-imagenes2">
           <!-- Las tarjetas se generarán aquí mediante JavaScript -->
@@ -205,10 +268,9 @@
 
     <footer>
       <p class="text-center">
-        <strong>Piero Nicolini | +56977116315 | naturalnen@gmail.com</strong>
+        <strong>Certificados de Cursos y talleres de Piero Nicolini.</strong>
       </p>
     </footer>
-
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         crearGaleria();
@@ -228,7 +290,7 @@
                     <div class="card">
                         <picture>
                             <source srcset="certs/${i}.webp" type="image/webp">
-                            <img loading="lazy" width="200" height="300" src="certs/${i}.jpg" alt="Certificado ${i}" class="bg-success card-img-top p-3">
+                            <img loading="lazy" width="200" src="certs/${i}.jpg" alt="Certificado ${i}" class="bg-success card-img-top p-3">
                         </picture>
                         <div class="card-body">
                             <h5 class="card-title">Certificado de Academia</h5>
@@ -257,7 +319,7 @@
                     <div class="card">
                         <picture>
                             <source srcset="desafioLatam/javascript/${i}.webp" type="image/webp">
-                            <img loading="lazy" width="100" height="100" object-fit="cover" src="desafioLatam/javascript/${i}.webp" alt="Certificado ${i}" class="bg-primary card-img-top p-3">
+                            <img loading="lazy" width="200" object-fit="cover" src="desafioLatam/javascript/${i}.webp" alt="Certificado ${i}" class="bg-primary card-img-top p-3">
                         </picture>
                         <div class="card-body">
                             <h5 class="card-title">JS ${i}</h5>
@@ -279,7 +341,7 @@
         const imagen = document.createElement("PICTURE");
         imagen.innerHTML = `
                 <source srcset="certs/${i}.webp" type="image/webp">
-                <img loading="lazy" width="1000" height="800" src="certs/${i}.webp" alt="Certificado ${i}">
+                <img loading="lazy" width="600" src="certs/${i}.webp" alt="Certificado ${i}">
             `;
 
         // Generar modal
@@ -306,7 +368,7 @@
         const imagen = document.createElement("PICTURE");
         imagen.innerHTML = `
                 <source srcset="desafioLatam/javascript/${e}.webp" type="image/webp">
-                <img loading="lazy" width="1000" height="800" src="desafioLatam/javascript/${e}.webp" alt="Certificado ${e}">
+                <img loading="lazy" width="600" src="desafioLatam/javascript/${e}.webp" alt="Certificado ${e}">
             `;
 
         // Generar modal
